@@ -1,0 +1,523 @@
+/* Helper Classes */
+.clear{
+    clear:both;
+}
+
+/*Messages*/
+.danger{
+background: red;
+color: white;
+text-align: center;
+margin-bottom: 10px;
+}
+
+.container
+{
+    background: white;
+    overflow-x: hidden;
+    height:100%;
+}
+
+.loadingData{
+    width: 100%;
+    height:1630px;
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    z-index:1;
+    display: none;
+}
+
+.userShowInfo
+{
+    position: absolute;
+    width:60px;
+    height:80px;
+    background: white;
+    top:25px;
+}
+
+.userShowInfo:after{
+    content: '';
+    position: absolute;
+    background:green;
+    width: 10px;
+    height:10px;
+
+}
+
+.loadingDataText{
+    width:100%;
+    text-align: center;
+    color:white;
+    margin-top:300px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.fullContainer{
+    width:100%;
+    height:600px;
+    background: #d11d0e;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 6% 85%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 6% 85%);
+    margin:0px 0px 0px 0px;
+}
+
+.fulHeader
+{
+    width:80%;
+    transform: skew(0deg, 0deg) rotate(0deg);
+    margin:0px 0px 0px 70px;
+
+}
+.logo
+{
+    margin-left:120px;
+    float:left;
+}
+.logo img{
+    width:120px;
+}
+
+.rightSide
+{
+    float:right;
+}
+.rightSide ul li{
+    float:left;
+}
+
+.rightSide ul li a i{
+    color:white;
+    padding:10px;
+}
+select.languageSelect
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    margin-top:10px;
+    background:transparent;
+    border: none;
+    color:white;
+}
+
+.menuContainer
+{
+    width:1200px;
+    height:800px;
+    background:#f0f2f6;
+    position: absolute;
+    top:65px;
+    left:85px;
+    border:1px solid transparent;
+    border-radius: 10px;
+    margin-bottom:150px;
+
+}
+.navbar-links
+{
+    width: 900px;
+    margin: 20px auto;
+}
+.navbar-links a
+{
+    text-decoration: none;
+    color:black;
+}
+
+.navbar-links i 
+{
+    font-size:10px;
+}
+
+.menuFullContent
+{
+    width:900px;
+    height:500px;
+    background: white;
+    margin: 0px auto;
+}
+
+.menuContent
+{
+    padding:50px;
+}
+
+.menuContent h1
+{
+    font-family: sans-serif;
+    font-size:22px;
+    font-weight: bold;
+}
+
+.menuContent p
+{
+    padding:10px 0px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.phoneNumber label{
+    font-size:18px;
+    font-weight:500;
+}
+
+.formLoginInput input[type=text],
+.formLoginInput input[type=password]
+{
+    margin: 10px 0 20px 0;
+    border:1px solid #e3e1e1;
+    padding:10px 40px 10px 20px;
+}
+.formLoginInput input:focus
+{
+    outline: none;
+}
+
+.formLoginInput input[type=submit]
+{
+    width:100px;
+    height:40px;
+    background:#d11d0e;
+    color:white;
+    border:1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.formLoginInput input:focus
+{
+    outline: none;
+}
+
+.additionalInputs a
+{
+    text-decoration: none;
+    color:black;
+}
+
+
+.footer
+{
+    width:100%;
+    height:430px;
+    background: #d11d0e;
+    margin-top: 600px;
+    -webkit-clip-path: polygon(0 1%, 94% 25%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 1%, 94% 25%, 100% 100%, 0% 100%);
+    border-bottom: 1px solid black;
+}
+
+.footerMenuList ul
+{
+    float: left;
+    padding: 120px 40px;
+}
+
+.footerMenuList ul li
+{
+    padding:10px 0px;
+}
+
+.footerMenuList ul li a,
+.footerMenuList ul li span
+{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+}
+
+
+/* Services Section */
+
+.servicesList
+{
+    width: 1100px;
+    margin:0 auto;
+}
+
+.servicesList ul li
+{
+    width: 172px;
+    height: 170px;
+    background:white;
+    float:left;
+    border:1px solid transparent;
+    border-radius: 6px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.servicesList ul li a
+{
+    text-decoration: none;
+}
+.servicesList ul li a img
+{
+    width: 60px;
+    height: 90px;
+    margin-left: 54px;
+    margin-bottom: 12px;
+    margin-top: 25px;
+}
+
+.servicesList ul li a span
+{
+    display: block;
+    color:black;
+    font-size:14px;
+    text-align: center;
+    
+}
+
+
+/* Favorites */
+.favoritesList
+{
+    width:calc(100% - 60px);
+    height:calc(100% - 40px);
+    margin:20px 30px;
+}
+
+.favoritesList .leftSide
+{
+    width:calc(100%/4);
+    height:100%;
+    float:left;
+}
+
+.favoritesList .leftSide .profileInfo
+{
+    width:calc(100% - 80px);
+    background:white;
+    border:1px solid #ddd5d5;
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.profileName
+{
+    color:black;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.notifyData
+{
+    position: relative;
+}
+
+.notifyData i
+{
+    font-size:18px;
+    color:#ddd5d5;
+    margin-left:10px;
+    margin-top:4px;
+}
+
+.notifications
+{
+    width:17px;
+    height:17px;
+    border-radius: 50%;
+    background:red;
+    color:white;
+    font-size:16px;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    top:-11px;
+    right:-11px;
+}
+
+.userBonus
+{
+    display: block;
+    margin-top:10px;
+    font-size:16px;
+    color:black;
+    font-weight: bold;
+}
+
+.menuNavbar
+{
+    width:calc(100% - 60px);
+    height:calc(100% - 190px);
+    background: white;
+    padding:30px;
+    text-align: center;
+}
+
+.menuNavbar
+{
+    position: relative;
+}
+
+.menuNavbar ul li
+{
+    margin:25px 0px;
+}
+
+
+.menuNavbar ul li div.selectedMenuLeft
+{
+    width:2px;
+    height:35px;
+    background:#d11d0e;
+    display: inline-block;
+    position: absolute;
+    left:0px;
+    
+}
+
+.menuNavbar ul li a
+{
+    text-decoration: none;
+    color:black;
+    font-size:18px;
+    font-weight: bolder;
+}
+
+.menuNavbar ul li a:hover{
+    background:#d11d0e;
+    color:white !important;
+    padding:10px;
+    border:1px solid transparent;
+    border-radius: 6px;
+}
+
+.selected
+{
+    color:#d11d0e !important;
+}
+
+.favoritesList .menuRightSide
+{
+    float:right;
+    width:calc((100% - 25%) - 20px);
+    height:calc(100% - 10px);
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.menuRightSide h2
+{
+    font-size:18px;
+    font-weight: bold;
+}
+
+.rightPayments
+{
+    height:210px;
+}
+
+.rightPayments ul li 
+{
+    float:left;
+    width:186px;
+    height:172px;
+    background:white;
+    margin-right:20px;
+    margin-top:10px;
+    cursor: pointer;
+
+}
+
+.rightPayments ul li:hover
+{
+    border:1px solid #d11d0e;
+    border-top-color: transparent;
+}
+
+.borderSelected
+{
+    border:1px solid #d11d0e;
+    border-top-color: transparent;
+}
+
+.rightPayments ul li span
+{
+    font-size:16px;
+    text-align: center;
+    display: block;
+
+}
+
+.rightPayments ul li img{
+    display: block;
+    margin:20px auto;
+    width:60px;
+}
+
+.rightTablePayments
+{
+    width: calc(100% - 70px);
+    height:calc(100% - 258px);
+    background:white;;
+    border:1px solid transparent;
+    border-radius: 6px;
+    margin-top:10px;
+    padding: 10px 20px;
+}
+
+.lastPayment h3
+{
+    font-size:18px;
+    font-weight: bold;
+    float:left;
+}
+
+#tablePayments
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tablePayments tr td button
+{
+    background:#d11d0e;
+    color:white;
+    width: 60px;
+    height: 30px;
+    border:1px solid transparent;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#tablePayments th
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    font-size:16px;
+    font-weight: bold;
+}
+
+#tablePayments td
+{
+    font-size:14px;
+    font-weight: bold;
+
+}
+
+
+
+/* Banner List */
+.bannerList
+{
+    width:1400px;
+    margin: 50px auto;
+}
+.banner
+{
+    width:395px;
+    float:left;
+    margin-right:10px;
+}
+.banner img
+{
+    width:100%;
+}

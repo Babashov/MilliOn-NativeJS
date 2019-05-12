@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>MilliOn</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <div class="loadingData">
+            <div class="loadingDataText">Loading...</div>
+        </div>
+
+
+
+
+        <div class="fullContainer">
+           
+
+
+        </div>
+
+        
+
+        <div class="menuContainer">
+            
+            
+
+        </div>
+
+        <div class="footer">
+        </div>
+
+    </div>
+
+	<script src="api.js"></script>
+ 	<script src="UI.js"></script>
+ 	<script src="Events.js"></script>
+
+	<script type="text/javascript">
+		// Static Files
+		sessionStorage.getItem('token') ? 
+		UI.headerPageHTML({
+			token : JSON.parse(sessionStorage.getItem('token')),
+			userInfo: JSON.parse(sessionStorage.getItem('userInfo'))
+
+		}) : UI.headerPageHTML();
+		 // Service Page
+		api.fetchData({
+			url:'https://cors-anywhere.herokuapp.com/http://million-core-api.saffman.co.uk/api/v1.0/core/services/',
+			method:'GET'
+		},function(data){
+			UI.servicesPageHTML(data);
+		})
+		UI.footerPageHTML();
+		
+		(function()
+		{
+			if(!(sessionStorage.getItem('token')) && (document.location.href.substr(document.location.href.lastIndexOf('/') + 1) != 'index.html'))
+			{
+				 location.href = "index.html";		
+				
+			}
+		})();
+
+	</script>
+
+</body>
+</html>
